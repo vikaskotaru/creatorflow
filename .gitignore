@@ -1,0 +1,11 @@
+.next/
+node_modules/
+.env
+.env.local
+.env*.local
+creatorflow-sheets-key.json
+*.key.json
+.DS_Store
+dist/
+build/
+/tmp/
