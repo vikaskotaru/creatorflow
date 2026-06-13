@@ -33,6 +33,10 @@ const navItems = [
     href: "/learn", label: "Learn",
     icon: <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
   },
+  {
+    href: "/portfolio", label: "Portfolio",
+    icon: <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+  },
 ];
 
 export default function Sidebar() {
@@ -90,6 +94,9 @@ export default function Sidebar() {
               {item.label}
               {item.href === "/ai-studio" && (
                 <span style={{ marginLeft: 'auto', background: 'linear-gradient(135deg, #ff3366, #8b5cf6)', color: 'white', fontSize: '9px', fontWeight: '800', padding: '1px 6px', borderRadius: '8px' }}>AI</span>
+              )}
+              {item.href === "/portfolio" && (
+                <span style={{ marginLeft: 'auto', background: 'rgba(34,197,94,0.2)', color: '#22c55e', fontSize: '9px', fontWeight: '800', padding: '1px 6px', borderRadius: '8px' }}>RH</span>
               )}
             </Link>
           );
